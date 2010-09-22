@@ -91,3 +91,7 @@ function addTodo() {
     html5rocks.webdb.addTodo(todo.value);
     todo.value = "";
 }
+
+function uploadToRemote() {
+    alert('upload to remote');
+}
