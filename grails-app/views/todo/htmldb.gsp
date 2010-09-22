@@ -5,6 +5,7 @@
   <meta name="layout" content="htmldb"/>
   <g:set var="entityName" value="${message(code: 'todo.label', default: 'Todo')}"/>
   <title><g:message code="default.list.label" args="[entityName]"/></title>
+  <g:javascript library="prototype" />
 </head>
 <body>
 
@@ -23,6 +24,12 @@
     <input type="button" value="Upload Todos to Server" onclick="uploadToRemote();
     return false;"/>
   </form>
+
+  <g:formRemote name="uploadForm" url="[controller:'todo',action:'save']" update="stuffFromServer">
+
+  </g:formRemote>
+
+  <div id="stuffFromServer"/>
 
   <h1>Remote (Server) Database</h1>
   <g:if test="${flash.message}">
@@ -56,6 +63,8 @@
     <g:paginate total="${todoInstanceTotal}"/>
   </div>
 </div>
+
+<g:remoteLink action="showTime" update="time">Show the time!</g:remoteLink> <div id="time"> </div>
 
 </body>
 </html>

@@ -19,11 +19,11 @@ html5rocks.webdb.createTable = function() {
     db.transaction(function(tx) {
         tx.executeSql("CREATE TABLE IF NOT EXISTS todo(ID INTEGER PRIMARY KEY ASC, todo TEXT, added_on DATETIME)", []);
     });
-    alert('end createtable');
+    //alert('end createtable');
 }
 
 html5rocks.webdb.addTodo = function(todoText) {
-    alert('In addTodo form submit function! todoText == ' + todoText);
+    //alert('In addTodo form submit function! todoText == ' + todoText);
     var db = html5rocks.webdb.db;
     db.transaction(function(tx) {
         var addedOn = new Date();
@@ -46,7 +46,7 @@ html5rocks.webdb.onSuccess = function(tx, r) {
 
 
 html5rocks.webdb.getAllTodoItems = function(renderFunc) {
-    alert('in getAllTodoItems')
+    //alert('in getAllTodoItems')
     var db = html5rocks.webdb.db;
     db.transaction(function(tx) {
         tx.executeSql("SELECT * FROM todo", [], renderFunc,
@@ -66,7 +66,6 @@ html5rocks.webdb.deleteTodo = function(id) {
 }
 
 function loadTodoItems(tx, rs) {
-    alert('in loadTodoItems function');
     var rowOutput = "";
     var todoItems = document.getElementById("todoItems");
     for (var i = 0; i < rs.rows.length; i++) {

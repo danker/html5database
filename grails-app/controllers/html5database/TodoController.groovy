@@ -18,6 +18,10 @@ class TodoController {
         [todoInstanceList: Todo.list(params), todoInstanceTotal: Todo.count()]
     }
 
+    def showTime = {
+        render "The time is ${new Date()}"
+    }
+
     def create = {
         def todoInstance = new Todo()
         todoInstance.properties = params
