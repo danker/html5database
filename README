@@ -1,0 +1,14 @@
+A simple Grails Todo application that leverages the HTML5 Web SQL database interface (http://dev.w3.org/html5/webdatabase/).
+
+All todo's will be stored locally, with the option to upload to the server.  As each todo is uploaded to the server, it
+is removed from the local database.
+
+To try it out, enter "grails run-app" from the project root directory (Requires GRAILS_HOME env variable to be set).
+
+The URL of interest is: http://localhost:8080/html5database/todo/htmldb
+
+Tested on:
+ - Safari 5.0.1 -- OSX
+ - Chrome 7.x -- OSX
+ - Mobile Safari -- iPad
+ - Mobile Safari -- iPhone4
