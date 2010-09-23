@@ -18,8 +18,14 @@ class TodoController {
         [todoInstanceList: Todo.list(params), todoInstanceTotal: Todo.count()]
     }
 
-    def showTime = {
-        render "The time is ${new Date()}"
+    def htmldbsave = {
+        def todoInstance = new Todo(params)
+        if (todoInstance.save(flush: true)) {
+            flash.message = "${message(code: 'default.created.message', args: [message(code: 'todo.label', default: 'Todo'), todoInstance.id])}"  
+            render(view: "htmldb", model: [todoInstanceList: Todo.list(params), todoInstanceTotal: Todo.count()])
+        } else {
+            println("SAVE DIDN'T WORK");
+        }
     }
 
     def create = {

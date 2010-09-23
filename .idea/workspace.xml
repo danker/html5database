@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="11bbe90f-1413-4a5b-bf75-4e3f37ec468e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/todo/htmldb.gsp" afterPath="$PROJECT_DIR$/grails-app/views/todo/htmldb.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/js/htmldb.js" afterPath="$PROJECT_DIR$/web-app/js/htmldb.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/controllers/html5database/TodoController.groovy" afterPath="$PROJECT_DIR$/grails-app/controllers/html5database/TodoController.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/js/htmldb.js" afterPath="$PROJECT_DIR$/web-app/js/htmldb.js" />
     </list>
     <ignored path="$USER_HOME_GRIFFON$/" />
     <ignored path="$USER_HOME_GRAILS$/" />
@@ -68,34 +68,25 @@
       <file leaf-file-name="TodoController.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/controllers/html5database/TodoController.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="31" selection-start="638" selection-end="638" vertical-scroll-proportion="-7.5">
+            <state line="28" column="5" selection-start="996" selection-end="996" vertical-scroll-proportion="-8.653846">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="htmldb.gsp" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="htmldb.gsp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/views/todo/htmldb.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="29" selection-start="648" selection-end="648" vertical-scroll-proportion="0.5514706">
+            <state line="61" column="0" selection-start="1822" selection-end="1822" vertical-scroll-proportion="-18.67347">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="create.gsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/views/todo/create.gsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="5.5102043">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="htmldb.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="htmldb.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web-app/js/htmldb.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="67" column="32" selection-start="1969" selection-end="1969" vertical-scroll-proportion="-6.8076925">
+            <state line="86" column="11" selection-start="2402" selection-end="2402" vertical-scroll-proportion="0.6570122">
               <folding />
             </state>
           </provider>
@@ -118,9 +109,9 @@
         <option value="$PROJECT_DIR$/grails-app/domain/html5database/TODO.groovy" />
         <option value="$PROJECT_DIR$/grails-app/domain/html5database/Todo.groovy" />
         <option value="$PROJECT_DIR$/grails-app/views/layouts/htmldb.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/views/todo/htmldb.gsp" />
         <option value="$PROJECT_DIR$/grails-app/controllers/html5database/TodoController.groovy" />
         <option value="$PROJECT_DIR$/web-app/js/htmldb.js" />
-        <option value="$PROJECT_DIR$/grails-app/views/todo/htmldb.gsp" />
       </list>
     </option>
   </component>
@@ -378,13 +369,13 @@
     <frame x="0" y="22" width="1721" height="1097" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32958034" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32958034" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32958034" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Grails View" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3299462" sideWeight="0.66325486" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Grails View" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3299462" sideWeight="0.7430911" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32958034" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -394,7 +385,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24985057" sideWeight="0.66325486" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25076765" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24974412" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -404,7 +395,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
-    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="PERFORM_UPDATE_IN_BACKGROUND" value="true" />
     <option name="PERFORM_COMMIT_IN_BACKGROUND" value="true" />
     <option name="PERFORM_EDIT_IN_BACKGROUND" value="true" />
@@ -415,7 +406,7 @@
     <option name="ENABLE_BACKGROUND_PROCESSES" value="false" />
     <option name="CHANGED_ON_SERVER_INTERVAL" value="60" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Clean up of htmldb page, added remote view and button to sync with remote database." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added some basic Ajax functionality, tested with Safari for iPad." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -430,6 +421,7 @@
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
     <MESSAGE value="Initial Commit" />
     <MESSAGE value="Clean up of htmldb page, added remote view and button to sync with remote database." />
+    <MESSAGE value="Added some basic Ajax functionality, tested with Safari for iPad." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -470,20 +462,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web-app/js/htmldb.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="32" selection-start="1969" selection-end="1969" vertical-scroll-proportion="-6.8076925">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/controllers/html5database/TodoController.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="31" selection-start="638" selection-end="638" vertical-scroll-proportion="-7.5">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/views/todo/create.gsp">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="5.5102043">
@@ -493,7 +471,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/views/todo/htmldb.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="29" selection-start="648" selection-end="648" vertical-scroll-proportion="0.5514706">
+        <state line="61" column="0" selection-start="1822" selection-end="1822" vertical-scroll-proportion="-18.67347">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/html5database/TodoController.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="5" selection-start="996" selection-end="996" vertical-scroll-proportion="-8.653846">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-app/js/htmldb.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="86" column="11" selection-start="2402" selection-end="2402" vertical-scroll-proportion="0.6570122">
           <folding />
         </state>
       </provider>

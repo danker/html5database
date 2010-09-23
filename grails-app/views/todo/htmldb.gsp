@@ -5,7 +5,7 @@
   <meta name="layout" content="htmldb"/>
   <g:set var="entityName" value="${message(code: 'todo.label', default: 'Todo')}"/>
   <title><g:message code="default.list.label" args="[entityName]"/></title>
-  <g:javascript library="prototype" />
+  <g:javascript library="prototype"/>
 </head>
 <body>
 
@@ -15,21 +15,17 @@
   <ul id="todoItems">
 
   </ul>
-  <form type="post">
+  <form type="post" onsubmit="addTodo();return false;">
     <input type="text" id="todo" name="todo"
             placeholder="What do you need to do?" style="width: 200px;"/>
-    <br/>
-    <input type="button" value="Add Todo Item" onclick="addTodo();
-    return false;"/>
-    <input type="button" value="Upload Todos to Server" onclick="uploadToRemote();
-    return false;"/>
+    <input type="submit" value="Add Todo Item"/>
   </form>
 
-  <g:formRemote name="uploadForm" url="[controller:'todo',action:'save']" update="stuffFromServer">
 
-  </g:formRemote>
-
-  <div id="stuffFromServer"/>
+  <form name="serveruploadform" type="post" action="/html5database/todo/htmldbsave" onsubmit="uploadToRemote(); return false;">
+    <br/>
+    <input type="submit" value="Upload Todos to Server"/>
+  </form>
 
   <h1>Remote (Server) Database</h1>
   <g:if test="${flash.message}">
@@ -63,8 +59,6 @@
     <g:paginate total="${todoInstanceTotal}"/>
   </div>
 </div>
-
-<g:remoteLink action="showTime" update="time">Show the time!</g:remoteLink> <div id="time"> </div>
 
 </body>
 </html>

@@ -19,7 +19,6 @@ html5rocks.webdb.createTable = function() {
     db.transaction(function(tx) {
         tx.executeSql("CREATE TABLE IF NOT EXISTS todo(ID INTEGER PRIMARY KEY ASC, todo TEXT, added_on DATETIME)", []);
     });
-    //alert('end createtable');
 }
 
 html5rocks.webdb.addTodo = function(todoText) {
@@ -46,7 +45,6 @@ html5rocks.webdb.onSuccess = function(tx, r) {
 
 
 html5rocks.webdb.getAllTodoItems = function(renderFunc) {
-    //alert('in getAllTodoItems')
     var db = html5rocks.webdb.db;
     db.transaction(function(tx) {
         tx.executeSql("SELECT * FROM todo", [], renderFunc,
@@ -63,6 +61,32 @@ html5rocks.webdb.deleteTodo = function(id) {
                 },
                 html5rocks.webdb.onError);
     });
+}
+
+html5rocks.webdb.uploadTodo = function(tx, rs) {
+
+    if (rs.rows.length > 0) {
+
+        // grab the first item to upload
+        var row = rs.rows.item(0);
+
+        var todo = document.createElement("input");
+
+        with (todo) {
+            setAttribute("name", "text");
+            setAttribute("type", "hidden");
+            setAttribute("value", row.todo);
+        }
+
+        document.serveruploadform.appendChild(todo);
+
+        html5rocks.webdb.deleteTodo(row.ID);
+
+        document.serveruploadform.submit();
+
+        // It would be better to upload the result first, then delete upon successful upload.  Probably
+        // need to do this as an AJAX request so we don't get the page refresh of a standard form submit.
+    }
 }
 
 function loadTodoItems(tx, rs) {
@@ -92,5 +116,12 @@ function addTodo() {
 }
 
 function uploadToRemote() {
-    alert('upload to remote');
+
+    // grab everything then send the results to the uploadTodo function.
+    var db = html5rocks.webdb.db;
+    db.transaction(function(tx) {
+        tx.executeSql("SELECT * FROM todo", [], html5rocks.webdb.uploadTodo,
+                html5rocks.webdb.onError);
+    });
+
 }
